@@ -14,8 +14,6 @@ public class Client {
 	private Socket socket = null;
 	private ObjectOutputStream output = null;
 	private ObjectInputStream input = null;
-	private ObjectInputStream inputServer = null;
-	private ObjectInputStream inputClient = null;
 
 	// constructor to put ip address and port
 	public Client(String address, int port)
@@ -56,17 +54,6 @@ public class Client {
 
 		// string to read message from input
 		String line = "";
-
-		// keep reading until "Over" is input
-		//		while (!line.equals("Over")) {
-		//			try {
-		//				line = input.readLine();
-		//				out.writeUTF(line);
-		//			}
-		//			catch (IOException i) {
-		//				System.out.println(i);
-		//			}
-		//		}
 
 		// close the connection
 		try {

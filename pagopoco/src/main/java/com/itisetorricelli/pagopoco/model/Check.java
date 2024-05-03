@@ -5,6 +5,7 @@ import java.util.ArrayList;
 
 public class Check implements Serializable {
 
+	private static final long serialVersionUID = 1L;
 	private ArrayList<Product> cart;
 	private double amount = 0.00;
 	
